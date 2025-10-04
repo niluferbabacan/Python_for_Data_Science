@@ -258,16 +258,7 @@ add_element(12, 4)
 add_element(2, 7)
 add_element(6, 3)
 
-#######################
-# Uygulama - Mülakat Sorusu -Interview Question_1
-#######################
 
-# Amaç: Aşağıdaki şekilde string değiştiren fonksiyon yazmak istiyoruz.
-
-# before: "hi my name is john and i am learning python"
-# after: "Hi mY NaMe iS JoHn aNd i aM LeArNiNg pYtHoN"
-
-# Çözüm için interview_questions dosyasına bakınız !!!!
 
 
 
