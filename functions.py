@@ -50,10 +50,12 @@ summer(arg2=7, arg1=3)
 #######################
 # Docstring
 #######################
-
+# Docstring fonksiyonlarımıza
+# herkesin anlayabileceği ortak bir dil ile bigi notu ekleme yoludur.
+# """ 3 tırnak + enter press
 def summer(arg1, arg2):
     """
-    Sum of two numbers
+    Sum of two numbers # fonksiyon ne yaptığı bilgisi yazılır.
 
     Args:
         arg1: int, float
@@ -74,13 +76,22 @@ help(summer)
 
 summer(4, 5)
 
+# aynı dili konuşabilmek adına docstring 3 bölüme ayrılmıştır:
+# 1. fonk. ne yaptığı
+# 2. argümanların ne yaptığı
+# 3. fonksiyonun çıktısının ne olacağı bölümleridir.
+
 
 #######################
 # Fonksiyonların Statement/Body Bölümü
 #######################
 
 # def function_name(parameters/arguments):
-#     statements (function body)
+# statements (function body)
+
+# fonksiyonların detaylı bir şekilde ne görev yaptığına
+# hangi şekilde hangi sırayla yapacağına karar verdiğimiz ve
+# bunu python aifade ettiğimiz kısımdır.
 
 def say_hi():
     print("Merhaba")
@@ -90,7 +101,7 @@ def say_hi():
 
 say_hi()
 
-
+# bir fonksiyon argümansız, parametresiz de olabilir.
 def say_hi(string):
     print(string)
     print("Hello")
@@ -127,6 +138,9 @@ add_element(18, 10)
 # Ön Tanımlı Argümanlar/Parametreler (Default Parameters/Arguments)
 #######################
 
+# Kullanıcı her argümanı girmemiş olsa dahi
+# fonksiyonun çalışmasını sürdürmesini sağlarız.
+
 def divide(a, b):
     print(a / b)
 
@@ -161,7 +175,7 @@ say_hi("Selam")
 (52 + 45) / 80
 
 
-# DRY: don't repeat yourself
+# DRY: don't repeat yourself (Temel programlama prensibi)
 # birbirini tekrar eden görevler söz konusu olduğunda
 # fonksiyon yazma ihtiyacı kendini hissettirir.
 
@@ -209,6 +223,8 @@ varma, moisturea, chargea, outputa = calculate(98, 12, 78)
 #######################
 # Fonksiyon İçerisinden Fonksiyon Çağırmak
 ######################
+
+# çağıracak olacağınız fonksiyonların argümanlarını da tanımladığınız ana fonksiyona eklenmeli.
 
 def calculate(varm, moisture, charge):
     return int((varm + moisture) / charge)
